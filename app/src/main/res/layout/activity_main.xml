@@ -43,23 +43,27 @@
                 android:text="1. Who was the first female monster to appear in a movie?" />
 
             <RadioGroup
+                android:id="@+id/monster_radiogroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="8dp">
 
                 <RadioButton
+                    android:id="@+id/dracula_radiobutton"
                     style="@style/AnswerTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Dracula's Daughter" />
 
                 <RadioButton
+                    android:id="@+id/frankenstein_radiobutton"
                     style="@style/AnswerTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Bride of Frankenstein" />
 
                 <RadioButton
+                    android:id="@+id/cat_radiobutton"
                     style="@style/AnswerTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -85,9 +89,11 @@
                 android:text="2. What color were the slippers in the original Wizard of Oz?" />
 
             <EditText
+                android:id="@+id/slipper_edittext"
                 style="@style/AnswerTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="Color"
                 android:padding="8dp" />
 
             <LinearLayout
@@ -109,24 +115,28 @@
                 android:text="3. What are the three films of the Lord of the Rings trilogy?" />
 
             <CheckBox
+                android:id="@+id/two_tower_checkbox"
                 style="@style/AnswerTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="The Two Towers" />
 
             <CheckBox
+                android:id="@+id/fellowship_checkbox"
                 style="@style/AnswerTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="The Fellowship of the Ring" />
 
             <CheckBox
+                android:id="@+id/phoenix_checkbox"
                 style="@style/AnswerTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="The Phoenix Cup" />
 
             <CheckBox
+                android:id="@+id/king_checkbox"
                 style="@style/AnswerTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -151,23 +161,27 @@
                 android:text="4. What is Sean Connery's real first name?" />
 
             <RadioGroup
+                android:id="@+id/first_name_radiogroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="8dp">
 
                 <RadioButton
+                    android:id="@+id/william_radiobutton"
                     style="@style/AnswerTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="William" />
 
                 <RadioButton
+                    android:id="@+id/franklin_radiobutton"
                     style="@style/AnswerTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Franklin" />
 
                 <RadioButton
+                    android:id="@+id/thomas_radiobutton"
                     style="@style/AnswerTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -187,7 +201,7 @@
                 android:layout_gravity="center"
                 android:layout_margin="8dp"
                 android:gravity="center"
-                android:onClick="submit"
+                android:onClick="submitAnswers"
                 android:padding="8dp"
                 android:text="Submit" />
         </LinearLayout>
