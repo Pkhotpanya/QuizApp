@@ -6,13 +6,192 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.quizapp.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:padding="8dp"
+                android:src="@drawable/classic_monsters" />
+
+            <TextView
+                style="@style/QuestionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Who was the first female monster to appear in a movie?" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <RadioButton
+                    style="@style/AnswerTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dracula's Daughter" />
+
+                <RadioButton
+                    style="@style/AnswerTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bride of Frankenstein" />
+
+                <RadioButton
+                    style="@style/AnswerTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cat People" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="8dp"
+                android:background="@android:color/black"></LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:padding="8dp"
+                android:src="@drawable/wizard_of_oz" />
+
+            <TextView
+                style="@style/QuestionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. What color were the slippers in the original Wizard of Oz?" />
+
+            <EditText
+                style="@style/AnswerTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="8dp"
+                android:background="@android:color/black"></LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:padding="8dp"
+                android:src="@drawable/lord_of_the_rings" />
+
+            <TextView
+                style="@style/QuestionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. What are the three films of the Lord of the Rings trilogy?" />
+
+            <CheckBox
+                style="@style/AnswerTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Two Towers" />
+
+            <CheckBox
+                style="@style/AnswerTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Fellowship of the Ring" />
+
+            <CheckBox
+                style="@style/AnswerTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Phoenix Cup" />
+
+            <CheckBox
+                style="@style/AnswerTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Return of the King" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="8dp"
+                android:background="@android:color/black"></LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:padding="8dp"
+                android:src="@drawable/sean_connery" />
+
+            <TextView
+                style="@style/QuestionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. What is Sean Connery's real first name?" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <RadioButton
+                    style="@style/AnswerTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="William" />
+
+                <RadioButton
+                    style="@style/AnswerTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Franklin" />
+
+                <RadioButton
+                    style="@style/AnswerTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thomas" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="8dp"
+                android:background="@android:color/black"></LinearLayout>
+
+            <Button
+                style="@style/AnswerTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:onClick="submit"
+                android:padding="8dp"
+                android:text="Submit" />
+        </LinearLayout>
+
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
